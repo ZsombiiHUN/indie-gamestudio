@@ -1,0 +1,185 @@
+# ==============================================================================
+# 1. SECURITY & ENVIRONMENT VARIABLES (Crucial)
+# ==============================================================================
+# Never commit actual credentials, private keys, or local configuration files.
+.env
+.env.accounts
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+*.pem
+*.key
+*.secret
+*.pkcs12
+*.pfx
+
+# Always track example templates so your team knows what variables are needed
+!.env.example
+!.env.template
+
+# ==============================================================================
+# 2. OPERATING SYSTEM SPECIFIC JUNK
+# ==============================================================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ==============================================================================
+# 3. POPULAR EDITORS & IDEs
+# ==============================================================================
+# VS Code
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/settings.json
+!.vscode/tasks.json
+
+# JetBrains (IntelliJ, WebStorm, PyCharm, PhpStorm, etc.)
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Visual Studio
+.vs/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Other Editors
+.elasticbeanstalk/
+.project
+.classpath
+.cproject
+.settings/
+*.swp
+*.swo
+
+# ==============================================================================
+# 4. DEPENDENCY & PACKAGE MANAGERS
+# ==============================================================================
+# JavaScript / Node.js
+node_modules/
+jspm_packages/
+.pnpm-store/
+.yarn/cache/
+.yarn/unplugged/
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+eggs/
+parts/
+bin/
+var/
+sdist/
+develop-eggs/
+downloads/
+include/
+lib/
+lib64/
+parts/
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.nox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.venv/
+venv/
+ENV/
+env/
+
+# Java / Maven / Gradle
+target/
+!.mvn/wrapper/maven-wrapper.jar
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# PHP
+vendor/
+.phpunit.result.cache
+
+# Ruby
+.bundle/
+vendor/bundle/
+log/*.log
+tmp/
+
+# ==============================================================================
+# 5. BUILD ARTIFACTS, COMPILATION OUTPUT, & LOGS
+# ==============================================================================
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Diagnostic/Runtime output
+*.pid
+*.seed
+*.pid.lock
+
+# Compiled binaries and objects
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.obj
+dist/
+out/
+build/
+
+# ==============================================================================
+# 6. TESTING & COVERAGE REPORTING
+# ==============================================================================
+.nyc_output/
+coverage/
+.jest/
+.mocha/
+.pytest_cache/
+.cypress/
