@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indie Gamestudio - Színpaletta Bemutató</title>
+    <style>
+        :root {
+            --bg-main: #11100E;          /* Ink Black - Fő háttér */
+            --surface-elevated: #211F1C;  /* Charcoal - Kiemelt felület */
+            --text-main: #F4EBDD;         /* Warm Bone - Fő szöveg / világos */
+            --brand: #FF5A45;             /* Signal Coral - Márka / Brand szín */
+            --brand-hover: #9E392D;       /* Brick - Coral sötét / hover */
+            --accent-special: #D8F34A;    /* Acid Chartreuse - Különleges kiemelés */
+            --text-muted: #9B9388;        /* Stone - Tompított szöveg */
+            --border-light: #D8CDBD;      /* Sand - Világos szegély */
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--bg-main);
+            color: var(--text-main);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Felső színminta sáv (Paletta áttekintés) */
+        .palette-bar {
+            background-color: var(--surface-elevated);
+            border-bottom: 1px solid rgba(216, 205, 189, 0.25);
+            padding: 10px 20px;
+            font-size: 0.85rem;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+        }
+
+        .palette-title {
+            color: var(--text-muted);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .swatches {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .swatch {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 3px 8px;
+            border-radius: 4px;
+            background-color: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(216, 205, 189, 0.2);
+            color: var(--text-muted);
+            font-size: 0.75rem;
+        }
+
+        .swatch-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            display: inline-block;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        /* Fejléc / Navigáció */
+        header {
+            background-color: var(--surface-elevated);
+            border-bottom: 1px solid rgba(216, 205, 189, 0.15);
+            padding: 16px 28px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .brand-logo {
+            font-size: 1.4rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            color: var(--text-main);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .brand-logo span {
+            color: var(--brand);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 24px;
+            align-items: center;
+        }
+
+        nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.2s ease;
+        }
+
+        nav a:hover,
+        nav a.active {
+            color: var(--text-main);
+        }
+
+        /* Gombok */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.1s ease;
+            border: 1px solid transparent;
+        }
+
+        .btn-brand {
+            background-color: var(--brand);
+            color: #ffffff;
+        }
+
+        .btn-brand:hover {
+            background-color: var(--brand-hover);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--text-main);
+            border: 1px solid var(--border-light);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--surface-elevated);
+            border-color: var(--text-main);
+        }
+
+        .btn-accent {
+            background-color: var(--accent-special);
+            color: var(--bg-main);
+            font-weight: 700;
+        }
+
+        .btn-accent:hover {
+            opacity: 0.9;
+        }
+
+        /* Fő tartalom */
+        main {
+            max-width: 1100px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 48px 24px;
+            flex: 1;
+        }
+
+        /* Hero szekció */
+        .hero {
+            padding: 48px 0 64px 0;
+            text-align: center;
+            border-bottom: 1px solid rgba(216, 205, 189, 0.12);
+            margin-bottom: 56px;
+        }
+
+        .badge-special {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background-color: var(--accent-special);
+            color: var(--bg-main);
+            font-size: 0.8rem;
+            font-weight: 800;
+            padding: 5px 12px;
+            border-radius: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.2rem, 5vw, 3.4rem);
+            font-weight: 800;
+            line-height: 1.15;
+            color: var(--text-main);
+            margin-bottom: 18px;
+            letter-spacing: -0.03em;
+        }
+
+        .hero h1 .highlight {
+            color: var(--brand);
+        }
+
+        .hero p {
+            font-size: 1.15rem;
+            color: var(--text-muted);
+            max-width: 640px;
+            margin: 0 auto 32px auto;
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: 14px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* Kártya rács / Bemutatás */
+        .section-header {
+            margin-bottom: 32px;
+        }
+
+        .section-header h2 {
+            font-size: 1.8rem;
+            color: var(--text-main);
+            margin-bottom: 8px;
+        }
+
+        .section-header p {
+            color: var(--text-muted);
+            font-size: 1rem;
+        }
+
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            margin-bottom: 56px;
+        }
+
+        .card {
+            background-color: var(--surface-elevated);
+            border: 1px solid rgba(216, 205, 189, 0.18);
+            border-radius: 12px;
+            padding: 28px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            border-color: var(--border-light);
+        }
+
+        .card-tag {
+            align-self: flex-start;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding: 3px 10px;
+            border-radius: 4px;
+            margin-bottom: 16px;
+        }
+
+        .tag-coral {
+            background-color: rgba(255, 90, 69, 0.15);
+            color: var(--brand);
+            border: 1px solid var(--brand);
+        }
+
+        .tag-accent {
+            background-color: rgba(216, 243, 74, 0.15);
+            color: var(--accent-special);
+            border: 1px solid var(--accent-special);
+        }
+
+        .tag-sand {
+            background-color: rgba(216, 205, 189, 0.1);
+            color: var(--border-light);
+            border: 1px solid var(--border-light);
+        }
+
+        .card h3 {
+            font-size: 1.3rem;
+            color: var(--text-main);
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+
+        .card-link {
+            color: var(--brand);
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.9rem;
+        }
+
+        .card-link:hover {
+            color: var(--text-main);
+        }
+
+        /* Banner / Kiemelt doboz */
+        .feature-box {
+            background: linear-gradient(135deg, var(--surface-elevated) 0%, #171513 100%);
+            border: 1px solid var(--border-light);
+            border-radius: 12px;
+            padding: 36px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 24px;
+        }
+
+        .feature-box-content {
+            max-width: 600px;
+        }
+
+        .feature-box h3 {
+            font-size: 1.5rem;
+            color: var(--text-main);
+            margin-bottom: 8px;
+        }
+
+        .feature-box p {
+            color: var(--text-muted);
+            font-size: 1rem;
+        }
+
+        /* Lábléc */
+        footer {
+            background-color: var(--surface-elevated);
+            border-top: 1px solid rgba(216, 205, 189, 0.15);
+            padding: 32px 24px;
+            margin-top: auto;
+        }
+
+        .footer-content {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .footer-credits strong {
+            color: var(--text-main);
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 18px;
+        }
+
+        .footer-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            color: var(--brand);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Színpaletta ellenőrző és mintasáv -->
+    <div class="palette-bar">
+        <span class="palette-title">Színskála áttekintés:</span>
+        <div class="swatches">
+            <span class="swatch"><span class="swatch-dot" style="background-color: #11100E;"></span> Main bg: Ink Black (#11100E)</span>
+            <span class="swatch"><span class="swatch-dot" style="background-color: #211F1C;"></span> Elevated: Charcoal (#211F1C)</span>
+            <span class="swatch"><span class="swatch-dot" style="background-color: #F4EBDD;"></span> Text: Warm Bone (#F4EBDD)</span>
+            <span class="swatch"><span class="swatch-dot" style="background-color: #FF5A45;"></span> Brand: Signal Coral (#FF5A45)</span>
+            <span class="swatch"><span class="swatch-dot" style="background-color: #D8F34A;"></span> Accent: Acid Chartreuse (#D8F34A)</span>
+            <span class="swatch"><span class="swatch-dot" style="background-color: #9B9388;"></span> Muted: Stone (#9B9388)</span>
+            <span class="swatch"><span class="swatch-dot" style="background-color: #D8CDBD;"></span> Border: Sand (#D8CDBD)</span>
+            <span class="swatch"><span class="swatch-dot" style="background-color: #9E392D;"></span> Hover: Brick (#9E392D)</span>
+        </div>
+    </div>
+
+    <!-- Fejléc és navigáció -->
+    <header>
+        <div class="nav-container">
+            <a href="#" class="brand-logo">
+                Indie<span>Games</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Kezdőlap</a></li>
+                    <li><a href="#">Munkáink</a></li>
+                    <li><a href="#">Műhely</a></li>
+                    <li><a href="#">Csapat</a></li>
+                </ul>
+            </nav>
+            <div>
+                <a href="#projektek" class="btn btn-brand">Kapcsolat</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Fő tartalom -->
+    <main>
+        <!-- Hero szekció -->
+        <section class="hero">
+            <div class="badge-special">★ Új Projekt • 2026</div>
+            <h1>Kreatív független játékok <br><span class="highlight">szenvedéllyel építve</span></h1>
+            <p>
+                Egyedi hangulatú, pixel-pontos és történetközpontú indie játékokat készítünk az iskolai IKT projektkeretében.
+            </p>
+            <div class="hero-actions">
+                <a href="#projektek" class="btn btn-brand">Játékaink megtekintése</a>
+                <a href="#muhely" class="btn btn-secondary">Műhely &amp; Források</a>
+                <a href="#kiemelt" class="btn btn-accent">Speciális demó</a>
+            </div>
+        </section>
+
+        <!-- Kártyák szekció -->
+        <section id="projektek">
+            <div class="section-header">
+                <h2>Aktuális Munkák &amp; Szerepkörök</h2>
+                <p>Nézd meg a csapat által fejlesztett projekteket és technológiákat.</p>
+            </div>
+
+            <div class="cards-grid">
+                <!-- 1. Kártya -->
+                <article class="card">
+                    <div>
+                        <span class="card-tag tag-coral">Signal Coral</span>
+                        <h3>Játéktervezés &amp; Kód</h3>
+                        <p>
+                            Gyors mechanikák és letisztult logika modern webes technológiákkal és játékmotorokkal.
+                        </p>
+                    </div>
+                    <a href="#" class="card-link">Részletek megtekintése &rarr;</a>
+                </article>
+
+                <!-- 2. Kártya -->
+                <article class="card">
+                    <div>
+                        <span class="card-tag tag-accent">Acid Chartreuse</span>
+                        <h3>Vizuális Világ &amp; Art</h3>
+                        <p>
+                            Karakteranimációk, pixelgrafika és látványtervek a sötét, meleg tónusú atmoszférához.
+                        </p>
+                    </div>
+                    <a href="#" class="card-link">Galéria megnyitása &rarr;</a>
+                </article>
+
+                <!-- 3. Kártya -->
+                <article class="card">
+                    <div>
+                        <span class="card-tag tag-sand">Sand Border</span>
+                        <h3>Zene &amp; Hangdizájn</h3>
+                        <p>
+                            Retro chiptune dallamok és dinamikus hangeffektek a magával ragadó játékélményért.
+                        </p>
+                    </div>
+                    <a href="#" class="card-link">Hangminták &rarr;</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Kiemelt doboz / Call to action -->
+        <section id="kiemelt" class="feature-box">
+            <div class="feature-box-content">
+                <h3>Csatlakozz a fejlesztői teszthez!</h3>
+                <p>
+                    A zárt béta verziók elérhetőek az iskolai műhely tagjai és tesztelői számára.
+                </p>
+            </div>
+            <div>
+                <a href="#" class="btn btn-brand">Béta hozzáférés kérése</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Lábléc -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-credits">
+                <p>&copy; 2026 Indie Gamestudio — IKT projektmunka II.</p>
+                <p>Csapattagok: <strong>Bando, Zsombi, Kincsi</strong></p>
+            </div>
+            <div class="footer-links">
+                <a href="#">Adatvédelem</a>
+                <a href="#">Dokumentáció</a>
+                <a href="#">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
