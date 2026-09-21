@@ -143,3 +143,100 @@ nav a {
 nav a:hover {
     color: var(--brand-color);
 }
+
+.about-section {
+    margin-bottom: 50px;
+}
+
+.section-header {
+    margin-bottom: 24px;
+}
+
+.section-header h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.section-header p {
+    font-size: 16px;
+    max-width: 800px;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background-color: var(--elevated-surface);
+    border: 1px solid rgba(216, 205, 189, 0.18);
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    border-color: var(--light-border);
+}
+
+
+.card h3 {
+    font-size: 22px;
+    color: var(--main-light-text);
+    margin: 25px 25px 12px 0;
+}
+
+.card p {
+    color: var(--muted-text);
+    font-size: 26.5px;
+    line-height: 1.6;
+    margin: 0 0 20px 0;
+    flex-grow: 1;
+}
+
+.card-link {
+    color: var(--brand-color);
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+.profile-image {
+    display: block;
+    width: 150px;
+    height: 198px;
+    border-radius: 15%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-link:hover {
+    color: var(--main-light-text);
+}
+
+#celkozonseg,
+#szolgaltatasok {
+    margin-bottom: 40px;
+}
+
+footer {
+    background-color: var(--elevated-surface);
+    border-top: 1px solid rgba(216, 205, 189, 0.15);
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
