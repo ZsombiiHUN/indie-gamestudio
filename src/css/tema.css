@@ -1,0 +1,41 @@
+:root {
+    --main-background: #11100E;
+    /* Ink Black */
+    --elevated-surface: #211F1C;
+    /* Charcoal */
+    --main-light-text: #F4EBDD;
+    /* Warm Bone */
+    --brand-color: #FF5A45;
+    /* Signal Coral */
+    --special-accent: #D8F34A;
+    /* Acid Chartreuse */
+    --muted-text: #9B9388;
+    /* Stone */
+    --light-border: #D8CDBD;
+    /* Sand */
+    --coral-dark-hover: #9E392D;
+    /* Brick */
+}
+
+body {
+    background-color: var(--main-background);
+}
+
+h1 {
+    color: var(--main-light-text);
+    text-align: center;
+    font-size: 100px;
+    background: linear-gradient(90deg, #f77801, #ac3202);
+    border-radius: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header {
+    width: 600px;
+}
+
+.main_container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
