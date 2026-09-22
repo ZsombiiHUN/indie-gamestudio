@@ -17,7 +17,6 @@
     /* Brick */
 }
 
-/* Alapvető dobozmodell és beállítások */
 * {
     box-sizing: border-box;
 }
@@ -32,7 +31,6 @@ body {
     flex-direction: column;
 }
 
-/* Fő navigációs sáv / Navbar */
 header.site-header,
 .site-header {
     background-color: var(--elevated-surface);
@@ -40,7 +38,7 @@ header.site-header,
     width: 100% !important;
     max-width: 100% !important;
     margin: 0 !important;
-    padding: 0 !important;
+    padding: 0 !important; /* '!important, hogy ne irja felül semmi se, amit helyileg meghatározhatja */
 }
 
 .site-header nav {
@@ -57,13 +55,13 @@ header.site-header,
 .site-header .logo {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 15px;
 }
 
 .site-header .logo a {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 15px;
     text-decoration: none;
     color: var(--main-light-text);
 }
@@ -75,7 +73,7 @@ header.site-header,
 }
 
 .site-header .logo h1 {
-    font-size: 1.25rem !important;
+    font-size: 125% !important;
     margin: 0 !important;
     padding: 0 !important;
     color: var(--main-light-text) !important;
@@ -83,7 +81,7 @@ header.site-header,
     border-radius: 0 !important;
     font-family: inherit !important;
     line-height: normal !important;
-    text-align: left !important;
+    text-align: center !important;
 }
 
 .site-header nav ul {
@@ -99,7 +97,6 @@ header.site-header,
     text-decoration: none;
     font-size: 16px;
     font-weight: 500;
-    transition: color 0.2s ease;
 }
 
 .site-header nav a:hover {
@@ -111,7 +108,6 @@ header.site-header,
     font-weight: bold;
 }
 
-/* Közös lábléc / Footer */
 footer {
     background-color: var(--elevated-surface);
     border-top: 1px solid rgba(216, 205, 189, 0.15);
