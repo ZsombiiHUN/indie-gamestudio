@@ -17,6 +17,8 @@
     /* Brick */
 }
 
+/* Code is messy af so sorry about that */
+
 body {
     background-color: var(--main-background);
 }
@@ -34,55 +36,114 @@ header {
     width: 600px;
 }
 
-.main_container {
+.firstcontainer, .secondcontainer, .thirdcontainer {
     display: flex;
     justify-content: center;
     text-align: center;
+    padding-bottom: 40px;
 }
 
-#starfall_hollow {
-    width: 700px;
+#picture1, #picture2, #picture3 {
+    width: 650px;
     height: auto;
     border-radius: 7%;
-    border: var(--special-accent) solid;
     border-width: 2px;
+    object-fit: cover;
+    transition: transform 0.1s ease;
 }
-
 
 div {
     margin: 10px;
 }
 
-#starfall_hollow:hover{
-    width: 710px;
-    height: auto; 
-    box-shadow: 0px 0px 10px rgb(216, 243, 74);
+#picture1:hover, #picture2:hover, #picture3:hover {
+    height: auto;
+    transform: scale(1.05);
 }
 
-.main_container .firstgame {
+#picture1 {
+    border: 2px var(--special-accent) solid;
+}
+#picture1:hover {
+      box-shadow: 0px 0px 10px rgb(216, 243, 74);
+}
+#picture2 {
+    border: 2px rgb(202, 108, 0) solid;
+}
+#picture2:hover {
+      box-shadow: 0px 0px 10px rgb(202, 108, 0);
+}
+#picture3 {
+    border: 2px  rgb(2, 199, 196) solid;
+}
+#picture3:hover {
+      box-shadow: 0px 0px 10px  rgb(2, 199, 196);
+}
+
+.firstcontainer .game, .secondcontainer .game, .thirdcontainer .game {
     background: rgb(33, 31, 28);
     width: 800px;
-    padding-top: 15px;
+    padding-top: 25px;
     border-radius: 30px;
     border: 1px rgb(216, 205, 189) solid;
     overflow: hidden;
 }
-h3 {
+
+.starfall_text {
     text-align: justify;
     font-size: 20px;
     margin: 20px;
-    font-family: Nebula Serif;
+    font-family: "Titillium Web" sans-serif;
     font-style: italic;
-    color: rgb(244, 235, 221);
+    color: var(--special-accent);
 }
 
-h2 {
+.lanterns_text {
+    text-align: justify;
+    font-size: 17px;
+    margin: 20px;
+    font-family: Cinzel;
+    font-style: italic;
+    color:rgb(202, 108, 0);
+}
+
+.ember_text {
+    text-align: justify;
+    font-size: 20px;
+    margin: 20px;
+    font-family: "Exo 2" sans-serif;
+    font-style: italic;
+    color: rgb(2, 199, 196);
+}
+
+.firstcontainer .game .starfall {
     font-family: Eurostile Bold Extended;
-    font-size: 40px;
+    font-size: 50px;
     background: rgb(17, 16, 14);
-    border-radius: 50%;
-    margin-left: 50px;
-    margin-right: 50px;
+    border-radius: 48%;
+    margin-left: 150px;
+    margin-right: 150px;
     margin-bottom: 0px;
-    
+}
+
+.secondcontainer .game .lantern {
+    font-family: Cormorant Garamond;
+    font-size: 50px;
+    background: rgb(218, 231, 28);
+    border-radius: 48%;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 0px;
+    -webkit-text-stroke: 0.4px black;
+}
+
+
+.thirdcontainer .game .ember {
+    font-family: "Orbitron", sans-serif;
+    font-size: 50px;
+    background: rgb(139, 0, 0);
+    border-radius: 48%;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 0px;
 }
