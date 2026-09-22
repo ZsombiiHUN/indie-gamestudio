@@ -31,12 +31,9 @@ body {
     
 }
 
-footer {
-    color: var(--muted-text);
-    padding: 10px;
-    text-align: center;
+#footer {
+    height: 100px;
     background: linear-gradient(to bottom, var(--main-background), var(--elevated-surface), var(--brand-color));
-    
 }
 
 .container {
@@ -52,18 +49,20 @@ footer {
   font-size: 30px;
   color: var(--main-light-text);
   border-radius: 10px;
+  box-shadow: 0 0 10px var(--light-border);
 }
 
 .team-member:hover {
     
     border: 1px solid var(--light-border);
+    box-shadow: 0 0 10px var(--special-accent);
 }
 
 .team-member-details {
   margin-top: 20px;
   font-size: 16px;
   color: var(--muted-text);
-  text-align: justify;
+  text-align: left;
   background-color: rgb(51, 51, 51);
   border-radius: 10px;
   padding: 10px;
