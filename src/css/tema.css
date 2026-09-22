@@ -39,3 +39,50 @@ header {
     justify-content: center;
     text-align: center;
 }
+
+#starfall_hollow {
+    width: 700px;
+    height: auto;
+    border-radius: 7%;
+    border: var(--special-accent) solid;
+    border-width: 2px;
+}
+
+
+div {
+    margin: 10px;
+}
+
+#starfall_hollow:hover{
+    width: 710px;
+    height: auto; 
+    box-shadow: 0px 0px 10px rgb(216, 243, 74);
+}
+
+.main_container .firstgame {
+    background: rgb(33, 31, 28);
+    width: 800px;
+    padding-top: 15px;
+    border-radius: 30px;
+    border: 1px rgb(216, 205, 189) solid;
+    overflow: hidden;
+}
+h3 {
+    text-align: justify;
+    font-size: 20px;
+    margin: 20px;
+    font-family: Nebula Serif;
+    font-style: italic;
+    color: rgb(244, 235, 221);
+}
+
+h2 {
+    font-family: Eurostile Bold Extended;
+    font-size: 40px;
+    background: rgb(17, 16, 14);
+    border-radius: 50%;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 0px;
+    
+}
