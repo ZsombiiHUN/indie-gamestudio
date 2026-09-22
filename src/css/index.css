@@ -103,17 +103,33 @@ p {
     display: block;
 }
 
+header.site-header,
+.site-header {
+    background-color: var(--elevated-surface);
+    border-bottom: 1px solid rgba(216, 205, 189, 0.15);
+}
+
 header nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 12px 26px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .logo {
     display: flex;
     align-items: center;
     gap: 12px;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: var(--main-light-text);
 }
 
 .logo img {
@@ -125,6 +141,9 @@ header nav {
 .logo h1 {
     font-size: 120%;
     margin: 0;
+    color: var(--main-light-text);
+    background: none;
+    border-radius: 0;
 }
 
 nav ul {
@@ -138,10 +157,18 @@ nav ul {
 nav a {
     color: var(--main-light-text);
     text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.2s ease;
 }
 
 nav a:hover {
     color: var(--brand-color);
+}
+
+nav a.active {
+    color: var(--brand-color);
+    font-weight: bold;
 }
 
 .about-section {
