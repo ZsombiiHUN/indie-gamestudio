@@ -25,15 +25,18 @@ body {
 
 h1 {
     color: var(--main-light-text);
-    text-align: center;
-    font-size: 100px;
+    font-size: 600%;
     background: linear-gradient(90deg, #f77801, #ac3202);
-    border-radius: 40px;
+    border-radius: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-right: 0.9%;
+    font-size: clamp(60px, 10vw, 200px);
+    word-break: normal;
 }
 
 header {
-    width: 600px;
+    justify-content: center;
+    display: flex;
 }
 
 .firstcontainer, .secondcontainer, .thirdcontainer {
@@ -43,8 +46,18 @@ header {
     padding-bottom: 40px;
 }
 
-#picture1, #picture2, #picture3 {
-    width: 650px;
+#picture1 {
+    width: 80%;
+    height: auto;
+    border-radius: 7%;
+    border-width: 2px;
+    object-fit: cover;
+    transition: transform 0.1s ease;
+
+}
+
+#picture2, #picture3 {
+    width: 90%;
     height: auto;
     border-radius: 7%;
     border-width: 2px;
@@ -82,7 +95,7 @@ div {
 
 .firstcontainer .game, .secondcontainer .game, .thirdcontainer .game {
     background: rgb(33, 31, 28);
-    width: 800px;
+    width: 64%;
     padding-top: 25px;
     border-radius: 30px;
     border: 1px rgb(216, 205, 189) solid;
@@ -91,11 +104,19 @@ div {
 
 .starfall_text {
     text-align: justify;
-    font-size: 20px;
+    font-size: 140%;
     margin: 20px;
     font-family: "Titillium Web" sans-serif;
     font-style: italic;
     color: var(--special-accent);
+    hyphens: auto;
+}
+
+@media (max-width: 600px) {
+    .starfall_text, .lanterns_text, .ember_text {
+        text-align: left;
+        font-size: 15px;
+    }
 }
 
 .lanterns_text {
@@ -105,6 +126,7 @@ div {
     font-family: Cinzel;
     font-style: italic;
     color:rgb(202, 108, 0);
+    hyphens: auto;
 }
 
 .ember_text {
@@ -114,36 +136,66 @@ div {
     font-family: "Exo 2" sans-serif;
     font-style: italic;
     color: rgb(2, 199, 196);
+    hyphens: auto;
+}
+
+@media (max-width: 600px) {
+    .ember_text {
+        font-size: 16px;
+        text-align: left;
+    }
+    .lanterns_text {
+        font-size: 14px;
+        text-align: left;
+    }
 }
 
 .firstcontainer .game .starfall {
     font-family: Eurostile Bold Extended;
-    font-size: 50px;
+    font-size: 400%;
     background: rgb(17, 16, 14);
     border-radius: 48%;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 20%;
+    margin-right: 20%;
     margin-bottom: 0px;
+    padding: 10px;
+    overflow-wrap: break-word;
+    font-size: clamp(20px, 5vw, 100px);
 }
 
 .secondcontainer .game .lantern {
     font-family: Cormorant Garamond;
-    font-size: 50px;
+    font-size: 320%;
     background: rgb(218, 231, 28);
     border-radius: 48%;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 10%;
+    margin-right: 10%;
     margin-bottom: 0px;
     -webkit-text-stroke: 0.4px black;
+    padding: 20px;
+    overflow-wrap: break-word;
+    font-size: clamp(19px, 4vw, 100px);
 }
 
 
-.thirdcontainer .game .ember {
+.secondcontainer .game .ember {
     font-family: "Orbitron", sans-serif;
-    font-size: 50px;
+    font-size: 300%;
     background: rgb(139, 0, 0);
     border-radius: 48%;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 10%;
+    margin-right: 10%;
     margin-bottom: 0px;
+    padding: 20px;
+    overflow-wrap: break-word;
+    font-size: clamp(19px, 4vw, 100px);
+}
+
+.maincontainer {
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.firstcontainer, .secondcontainer {
+    flex: 1 1 300px;
 }
