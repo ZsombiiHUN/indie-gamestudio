@@ -2,7 +2,7 @@
 
 - **Dátum:** 2026-09-14
 - **Felelős:** Zsombi
-- **Téma:** 18. A mi fejlesztőstúdiónk (Indie Game Studio)
+- **Téma:** 18. A mi fejlesztőstúdiónk (MySoftware)
 - **Kapcsolódó óra:** IKT Projektmunka II. — 04. óra (Közös munkakörnyezet, Git projektindítás)
 
 ---
@@ -10,7 +10,7 @@
 ## 1. Elvégzett feladatok
 
 ### Git és munkakörnyezet beállítása
-- Távoli GitHub tárhely csatlakoztatása (`https://github.com/ZsombiiHUN/indie-gamestudio.git`).
+- Távoli GitHub tárhely (`origin`) csatlakoztatása.
 - `.gitignore` finomhangolása (rendszerfájlok, átmeneti metaadatok szűrése).
 - Kezdeti projektállapot commitolása és feltöltése a `main` ágba.
 

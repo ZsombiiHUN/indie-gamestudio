@@ -2,7 +2,7 @@
 
 - **Dátum:** 2026-09-21
 - **Felelős / Tanuló:** Zsombi
-- **Téma:** 18. A mi fejlesztőstúdiónk (Indie Game Studio)
+- **Téma:** 18. A mi fejlesztőstúdiónk (MySoftware)
 - **Érintett Git ág / fájlok:** `src/html/index.html`, `src/css/index.css`, `src/images/`, `docs/zsombi/2026-09-21_rolunk_oszlopok_es_kepek.md`
 
 ---

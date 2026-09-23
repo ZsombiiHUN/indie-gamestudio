@@ -2,7 +2,7 @@
 
 - **Dátum:** 2026-09-18
 - **Felelős / Tanuló:** Zsombi
-- **Téma:** 18. A mi fejlesztőstúdiónk (Indie Game Studio)
+- **Téma:** 18. A mi fejlesztőstúdiónk (MySoftware)
 - **Érintett Git ág / fájlok:** `README.md`, `src/css/index.css`, `src/html/index.html`, `src/html/example.html`, `src/images/`, `docs/zsombi/2026-09-18_szinpaletta.md`
 
 ---
@@ -10,7 +10,7 @@
 ## 1. Elvégzett feladatok
 
 ### Színskála megtervezése és bevezetése
-- Kidolgoztam az Indie Gamestudio egységes, sötét tónusú színpalettáját:
+- Kidolgoztam a MySoftware egységes, sötét tónusú színpalettáját:
   - **Main background:** Ink Black (`#11100E`) — Teljes oldal háttere
   - **Elevated surface:** Charcoal (`#211F1C`) — Kiemelt felületek, header, kártyák
   - **Main light / text:** Warm Bone (`#F4EBDD`) — Fő szöveg és címsorok

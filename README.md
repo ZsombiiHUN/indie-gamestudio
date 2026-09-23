@@ -1,6 +1,6 @@
-# indie-gamestudio
+# MySoftware
 
-Indie Gamestudio — IKT projektmunka II.
+MySoftware — IKT projektmunka II.
 
 ## Színskála / Színpaletta
 

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Indie Gamestudio - Kezdőlap</title>
+    <title>MySoftware - Kezdőlap</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/index.css">
 </head>
@@ -13,7 +13,7 @@
         <nav>
             <div class="logo">
                 <a href="index.html">
-                    <img src="../images/logo.png" alt="Indie Gamestudio logó" height="45">
+                    <img src="../images/logo.png" alt="MySoftware logó" height="45">
                     <h1>MySoftware</h1>
                 </a>
             </div>
@@ -37,13 +37,37 @@
                 </p>
                 <a href="#bemutatkozas" class="hero-btn">Tudj meg többet &darr;</a>
             </div>
-            <img src="../images/herobanner.png" alt="Indie Gamestudio Banner">
+            <img src="../images/herobanner.png" alt="MySoftware banner">
         </div>
+        <section id="jatekok" class="games-section">
+            <h2>Játékaink</h2>
+            <div class="games-list">
+                <article class="game-card">
+                    <img src="../images/starfall-hollow.png" alt="Starfall Hollow játék képe">
+                    <h3>Starfall Hollow</h3>
+                    <p>Fedezd fel egy elfeledett világ romjait és titkait.</p>
+                    <a href="tema.html" class="games-link">Részletek &rarr;</a>
+                </article>
+                <article class="game-card">
+                    <img src="../images/lanterns-below.png" alt="Lanterns Below játék képe">
+                    <h3>Lanterns Below</h3>
+                    <p>Merészkedj le a föld alá, és fejtsd meg a mélység rejtélyeit.</p>
+                    <a href="tema.html" class="games-link">Részletek &rarr;</a>
+                </article>
+                <article class="game-card">
+                    <img src="../images/ember-signal.png" alt="Ember Signal játék képe">
+                    <h3>Ember Signal</h3>
+                    <p>Élj túl egy idegen bolygón, és keresd meg az ismeretlen jel forrását.</p>
+                    <a href="tema.html" class="games-link">Részletek &rarr;</a>
+                </article>
+            </div>
+            <p>A három játékkép ChatGPT-vel készült. A játékok bemutatóoldalát Marcell készítette.</p>
+        </section>
         <section id="bemutatkozas" class="about-section">
             <div class="section-header">
                 <h2>Rólunk</h2>
                 <p>
-                    Az Indie Gamestudio egy három fős elhivatott csapat, akik az iskolai IKT projektmunka keretében közösen valósítanak meg kreatív indie játékötleteket.
+                    A MySoftware egy három fős elhivatott csapat, akik az iskolai IKT projektmunka keretében közösen valósítanak meg kreatív indie játékötleteket.
                 </p>
             </div>
 
@@ -53,7 +77,9 @@
                         <img src="../images/bando.png" alt="Bando profilképe" class="profile-image">
                         <h3>Bando</h3>
                         <p>
-                        Szöveg szöveg szöveg
+                            András a Műhely oldalt készítette, és részt vett a színpaletta kialakításában.
+                            A Git és a Flexbox használatát gyakorolta.
+                            Következő célja a szövegek és a mobilnézet pontosítása.
                         </p>
                     </div>
                     <a href="muhely.html" class="card-link">Műhely megnyitása &rarr;</a>
@@ -64,10 +90,12 @@
                         <img src="../images/zsombi.png" alt="Zsombi profilképe" class="profile-image">
                         <h3>Zsombi</h3>
                         <p>
-                        A csapat lelke, megcsinalta a fooldalt, nincs egoja, jol erzi magat
+                            Zsombi a főoldalt és a stúdió arculatát tervezte.
+                            A CSS-változók és a Flexbox használatát gyakorolta.
+                            Következő célja a közös stílusok összehangolása a többi oldallal.
                         </p>
                     </div>
-                    <a href="index.html" class="card-link">Főoldal készítője &rarr;</a>
+                    <a href="muhely.html" class="card-link">Műhely megnyitása &rarr;</a>
                 </article>
 
                 <article class="card">
@@ -75,7 +103,8 @@
                         <img src="../images/marcel.png" alt="Kincsi profilképe" class="profile-image">
                         <h3>Kincsi</h3>
                         <p>
-                        Szöveg szöveg szöveg
+                            Marcell a Munkáink oldal HTML-szerkezetét és CSS-megjelenését készítette.
+                            Részt vett a színpaletta kialakításában. Következő célja a játékok rendezettebb, reszponzív elrendezése.
                         </p>
                     </div>
                     <a href="tema.html" class="card-link">Munkáink megtekintése &rarr;</a>
@@ -86,18 +115,31 @@
         <section id="celkozonseg">
             <h2>Célközönség és Cél</h2>
             <p>
+                Játékainkat azoknak készítjük, akik szeretik a felfedezést, a különleges világokat és a történetközpontú kalandokat.
+                Az iskolai projekt célja, hogy közösen tervezzünk és mutassunk be saját játékötleteket.
             </p>
+            <ul>
+                <li>Érdekes történetek</li>
+                <li>Hangulatos játékvilágok</li>
+                <li>Közös tervezés és csapatmunka</li>
+            </ul>
         </section>
 
         <section id="szolgaltatasok">
             <h2>Mit vállalunk az iskolában?</h2>
             <p>
+                Egy háromoldalas portfólióhonlapot készítünk, amely bemutatja a csapatot, a játékötleteinket és a közös munkánkat.
             </p>
+            <ul>
+                <li>A játékötleteket képekkel és saját leírásokkal mutatjuk be.</li>
+                <li>HTML-lel és CSS-sel építjük az oldalakat, a változtatásokat Gittel követjük.</li>
+                <li>Mobilon és számítógépen is ellenőrizzük, hogy a honlap használható-e.</li>
+            </ul>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Indie Gamestudio — IKT projektmunka II.</p>
+        <p>&copy; 2026 MySoftware — IKT projektmunka II.</p>
         <p>Csapattagok: Bando, Zsombi, Kincsi</p>
     </footer>
 
