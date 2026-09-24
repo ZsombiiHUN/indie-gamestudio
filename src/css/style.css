@@ -21,6 +21,11 @@
     box-sizing: border-box;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 body {
     background-color: var(--main-background);
     color: var(--main-light-text);
@@ -97,6 +102,7 @@ header.site-header,
     text-decoration: none;
     font-size: 16px;
     font-weight: 500;
+    transition: color 0.2s ease;
 }
 
 .site-header nav a:hover {
@@ -106,6 +112,51 @@ header.site-header,
 .site-header nav a.active {
     color: var(--brand-color);
     font-weight: bold;
+}
+
+
+/* Több kisebb kijelzőn is normálisan legyen */
+
+@media (max-width: 768px) {
+    .site-header nav {
+        flex-direction: column;
+        justify-content: center;
+        gap: 14px;
+        padding: 14px 20px;
+    }
+
+    .site-header nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .site-header nav {
+        padding: 12px 14px;
+        gap: 12px;
+    }
+
+    .site-header .logo a {
+        gap: 10px;
+    }
+
+    .site-header .logo img {
+        height: 38px;
+    }
+
+    .site-header .logo h1 {
+        font-size: 1.15rem !important;
+    }
+
+    .site-header nav ul {
+        gap: 8px 14px;
+    }
+
+    .site-header nav a {
+        font-size: 14px;
+    }
 }
 
 footer {
