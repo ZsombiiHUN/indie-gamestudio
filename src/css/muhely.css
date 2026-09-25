@@ -40,7 +40,7 @@ h2{
     font-size: 24px;
 }
 
-#banner {
+.banner {
     height: 100px;
     background: linear-gradient(to bottom, var(--main-background), var(--elevated-surface), rgb(255, 68, 0));
     margin-bottom: 0px;
@@ -91,7 +91,7 @@ h2{
   
 }
 
-#team-member-task {
+.team-member-task {
   font-size: 18px;
   color: var(--main-light-text);
   margin-bottom: 10px;
