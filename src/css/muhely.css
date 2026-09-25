@@ -151,4 +151,22 @@ footer {
 .all {
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
 }
+
+.image-gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-background);
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 15px;
+    border: 1px solid var(--light-border);
+}
+
+
+
+
