@@ -167,6 +167,39 @@ footer {
     border: 1px solid var(--light-border);
 }
 
+.sources {
+  background-color: var(--elevated-surface);
+  margin: 20px; 
+  padding: 15px;
+  font-size: 20px;
+  color: var(--main-light-text);
+  border-radius: 30px;
+  box-shadow: 0 0 5px var(--special-accent);
+  min-height: 100px;      
+  max-width: 1050px;       
+  width: 50%;      
+  box-sizing: border-box;
+  align-items: center;
+  text-align: center;
+  object-fit: cover;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
 
+.sources-details {
+  color: var(--main-light-text);
+  text-align: left;
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+  padding: 10px;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  width: 100%;
+  border: 1px solid var(--light-border);
+}
 
+.sources-details p {
+  font-family: 'Courier New',  monospace;
+  font-size: 12px;
+}
 
