@@ -154,7 +154,8 @@ div {
     font-family: Eurostile Bold Extended;
     font-size: 400%;
     background: rgb(17, 16, 14);
-    border-radius: 48%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
     margin-left: 20%;
     margin-right: 20%;
     margin-bottom: 0px;
@@ -167,7 +168,8 @@ div {
     font-family: Cormorant Garamond;
     font-size: 320%;
     background: rgb(218, 231, 28);
-    border-radius: 48%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 0px;
@@ -182,7 +184,8 @@ div {
     font-family: "Orbitron", sans-serif;
     font-size: 300%;
     background: rgb(139, 0, 0);
-    border-radius: 48%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 0px;

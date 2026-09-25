@@ -1,0 +1,33 @@
+# Feladatnapló — [Tevékenység / Feladat megnevezése]
+
+- **Dátum:** 2026-09-21
+- **Felelős / Tanuló:** Kincses Marcell
+- **Téma:** 18. A mi fejlesztőstúdiónk
+- **Érintett Git ág / fájlok:** feature/tema-oldal | src/html/tema.html
+
+---
+
+## 1. Elvégzett feladatok
+- téma lap létrehozása
+- első játék kártya kidolgozása
+- játékkártya-design kidolgozása
+- oldal szerkezetének kidolgozása
+
+---
+
+## 2. Tapasztalatok és mit tanultam közben
+- how to center div
+- git megtanulása
+- flexbox használata
+
+---
+
+## 3. Társi ellenőrzés (Peer review)
+- **Ellenőrző csapattag:** Bando
+- **Megjegyzések / észrevételek:** Minden rendben működik
+- **Állapot:** Elfogadva
+
+---
+
+## 4. Következő teendő
+- megcsinálni 2 másik játékkártyát, reszponzívvá tenni
