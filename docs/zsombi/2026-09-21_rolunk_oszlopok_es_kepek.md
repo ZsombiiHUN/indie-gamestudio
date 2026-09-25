@@ -44,6 +44,6 @@
 ---
 
 ## 4. Következő teendő
-- [ ] Bando és Kincsi profilképének (`bando.png`, `kincsi.png`) feltöltése és a leírások véglegesítése.
-- [ ] A 3 átnevezett játékkép beépítése a `tema.html` oldalra (Munkáink & Csapat).
-- [ ] A lábléc és a további szekciók (`#celkozonseg`, `#szolgaltatasok`) kidolgozása.
+- [ x ] Bando és Kincsi profilképének (`bando.png`, `kincsi.png`) feltöltése és a leírások véglegesítése.
+- [ x ] A 3 átnevezett játékkép beépítése a `tema.html` oldalra (Munkáink & Csapat).
+- [ x ] A lábléc és a további szekciók (`#celkozonseg`, `#szolgaltatasok`) kidolgozása.

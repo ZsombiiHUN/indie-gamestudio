@@ -24,10 +24,9 @@
 
 ## 3. Társi ellenőrzés
 
-- **Ellenőrző csapattag:** Még nem történt társi ellenőrzés.
-- **Állapot:** Társi ellenőrzésre vár.
+- **Ellenőrző csapattag:** Fátyol András
 
 ## 4. Következő teendő
 
-- [ ] A csapattagokkal ellenőrizni a bemutatkozások szövegét és a játékötletek készítőinek feltüntetését.
-- [ ] A Műhely oldalra felvenni a munkafolyamatot, saját képernyőképet, HTML/CSS-részletet és forráslistát a projektfüzet szerint.
+- [ x ] A csapattagokkal ellenőrizni a bemutatkozások szövegét és a játékötletek készítőinek feltüntetését.
+- [ x ] A Műhely oldalra felvenni a munkafolyamatot, saját képernyőképet, HTML/CSS-részletet és forráslistát a projektfüzet szerint.

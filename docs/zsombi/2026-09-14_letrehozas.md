@@ -33,6 +33,6 @@
 ## 2. Következő feladatok a csapatnak
 
 - [ ] **Zsombi:** Főoldal (`index.html`) bemutatkozó szövegének és céljának megírása.
-- [ ] **Bando:** 3 korábbi miniprojekt vagy mintamunka összegyűjtése a `tema.html`-hez.
-- [ ] **Kincsi:** 4 lépéses munkafolyamat és források összeállítása a `muhely.html`-hez.
+- [ ] **Bando:** 4 lépéses munkafolyamat és források összeállítása a `muhely.html`-hez.
+- [ ] **Kincsi:** 3 korábbi miniprojekt vagy mintamunka összegyűjtése a `tema.html`-hez.
 - [ ] **Közös:** Közös stíluslap készítése és a mobil reszponzivitás ellenőrzése.

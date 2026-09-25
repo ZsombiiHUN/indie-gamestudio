@@ -52,5 +52,5 @@
 ---
 
 ## 4. Következő teendő
-- [ ] A csapat többi tagjával (Bando, Kincsi) egyeztetni a stíluslap használatát a `tema.html` és `muhely.html` oldalakon.
-- [ ] A főoldal további szekcióinak (`#bemutatkozas`, `#celkozonseg`, `#szolgaltatasok`) szöveges kidolgozása.
+- [ x ] A csapat többi tagjával (Bando, Kincsi) egyeztetni a stíluslap használatát a `tema.html` és `muhely.html` oldalakon.
+- [ x ] A főoldal további szekcióinak (`#bemutatkozas`, `#celkozonseg`, `#szolgaltatasok`) szöveges kidolgozása.

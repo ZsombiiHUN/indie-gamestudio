@@ -32,9 +32,8 @@
 
 ## 3. Társi ellenőrzés (Peer review)
 
-- **Ellenőrző csapattag:** Még nem történt társi ellenőrzés.
-- **Megjegyzések / észrevételek:** -
-- **Állapot:** Társi ellenőrzésre vár.
+- **Ellenőrző csapattag:** Fátyol András
+- **Megjegyzések / észrevételek:** - Ügyes ez a gyerek!
 
 ---
 
