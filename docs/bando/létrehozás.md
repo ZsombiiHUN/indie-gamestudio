@@ -26,4 +26,4 @@
 ---
 
 ## 4. Következő teendő
-- CSS-en belüli további formázások, HTML alap reszponzívitása, A kellő adatok feljegyzése
+- [ x ]CSS-en belüli további formázások, HTML alap reszponzívitása, A kellő adatok feljegyzése
