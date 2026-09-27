@@ -63,7 +63,3 @@ A projekt az alábbi egységes színrendszert használja a stíluslapokban (`var
 | **Special accent** | Acid Chartreuse | `#D8F34A` | `rgb(216, 243, 74)` | Különleges kiemelések, figyelemfelkeltő kitűzők (badge) |
 | **Muted text** | Stone | `#9B9388` | `rgb(155, 147, 136)` | Tompított szövegek, másodlagos információk, lábléc feliratok |
 | **Light border** | Sand | `#D8CDBD` | `rgb(216, 205, 189)` | Szegélyek, kártyakeretek és finom elválasztók |
-
-### Mintafájl
-Egy önálló, beágyazott stílussal működő vizuális demó oldal elérhető itt:  
-`src/html/example.html`
