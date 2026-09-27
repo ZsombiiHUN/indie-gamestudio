@@ -1,4 +1,4 @@
-# Feladatnapló — [Tevékenység / Feladat megnevezése]
+# Feladatnapló — Végső javítások
 
 - **Dátum:** 2026-09-25
 - **Felelős / Tanuló:** András

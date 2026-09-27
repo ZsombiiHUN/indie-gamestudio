@@ -1,4 +1,4 @@
-# Feladatnapló — [Tevékenység / Feladat megnevezése]
+# Feladatnapló — Beadásra előkészítés
 
 - **Dátum:** 2026-09-26
 - **Felelős / Tanuló:** András
@@ -25,4 +25,4 @@
 ---
 
 ## 4. Következő teendő
-- [ ] Beadás előtti megbeszélések
+- [ x ] Beadás előtti megbeszélések
