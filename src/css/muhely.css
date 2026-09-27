@@ -30,6 +30,12 @@ body {
     background: linear-gradient(to top, var(--main-background), var(--elevated-surface), rgb(255, 68, 0));
 }
 
+.header h1 {
+    color: var(--main-light-text);
+    font-size: 36px;
+    margin: 0;
+}
+
 h3{
     color: var(--special-accent);
     font-size: 24px;

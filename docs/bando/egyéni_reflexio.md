@@ -10,7 +10,7 @@
 
 - **Tanuló neve:** Fátyol András
 - **Szerepkör a csapatban:** Frontend fejlesztő, Műhely és Források oldal (`muhely.html`, `muhely.css`), 4 lépéses munkafolyamat, forrásjegyzék
-- **Fő felelősségi terület és fájlok:** [pl. `src/html/muhely.html`, `src/css/muhely.css`]
+- **Fő felelősségi terület és fájlok:** `src/html/muhely.html`, `src/css/muhely.css`
 
 ---
 
@@ -51,5 +51,4 @@
 | **Reszponzivitás:** 390 px és 1280 px között nincs vízszintes görgetősáv, a dobozokból nem csúszik ki szöveg. | ✅ Teljes | [src/css/muhely.css#L59-L73]  
 | **Tartalmi minimumok:** 4 lépéses folyamat, képernyőképek, kódblokk és külső források linkelve. | ✅ Teljes | [src/html/muhely.html#L102-L189](file:///home/bando/projects/school/src/html/muhely.html#L102-L189) (kod1.png, kod2.png, <pre><code>) |
 | **Munkanaplók és teszt:** Naplók a docs/bando/ mappában, hibajavítások igazolva a tesztlapon. | ✅ Teljes | [docs/tesztlap.md](file:///home/bando/projects/school/docs/tesztlap.md) (2., 4. és 6. javított hiba) & [docs/bando/](file:///home/zsombi/projects/school/docs/bando/) |
-| **Munkanaplók és teszt:** Naplók a `docs/` mappában, tesztlap kitöltve. | ✅ / ⚠️ | `docs/tesztlap.md` naplózva |
 | **Átvételi próba:**  Minden tagnál szerepel a feladatköre és a fejlődési célja. | ✅ Teljes | [src/html/muhely.html#L40-L79](file:///home/bando/projects/school/src/html/muhely.html#L40-L79) |
