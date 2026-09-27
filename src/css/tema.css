@@ -17,26 +17,35 @@
     /* Brick */
 }
 
-/* Code is messy af so sorry about that */
-
 body {
     background-color: var(--main-background);
 }
 
+.page-header {
+    text-align: center;
+    padding: 20px 15px 10px 15px;
+}
+
+.page-header h1,
 h1 {
     color: var(--main-light-text);
-    font-size: 600%;
     background: linear-gradient(90deg, #f77801, #ac3202);
     border-radius: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding-right: 0.9%;
-    font-size: clamp(60px, 10vw, 200px);
+    padding: 12px 24px;
+    font-size: clamp(38px, 7vw, 90px);
     word-break: normal;
+    text-align: center;
+    margin: 15px auto 10px auto;
+    max-width: 900px;
+    box-sizing: border-box;
 }
 
-header {
-    justify-content: center;
-    display: flex;
+.page-subtitle {
+    color: var(--muted-text);
+    font-size: 16px;
+    text-align: center;
+    margin: 0 auto 25px auto;
 }
 
 .firstcontainer, .secondcontainer, .thirdcontainer {
@@ -44,6 +53,12 @@ header {
     justify-content: center;
     text-align: center;
     padding-bottom: 40px;
+    box-sizing: border-box;
+}
+
+.secondcontainer {
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 #picture1 {
@@ -53,7 +68,6 @@ header {
     border-width: 2px;
     object-fit: cover;
     transition: transform 0.1s ease;
-
 }
 
 #picture2, #picture3 {
@@ -65,10 +79,6 @@ header {
     transition: transform 0.1s ease;
 }
 
-div {
-    margin: 10px;
-}
-
 #picture1:hover, #picture2:hover, #picture3:hover {
     height: auto;
     transform: scale(1.05);
@@ -78,95 +88,93 @@ div {
     border: 2px var(--special-accent) solid;
 }
 #picture1:hover {
-      box-shadow: 0px 0px 10px rgb(216, 243, 74);
+    box-shadow: 0px 0px 10px rgb(216, 243, 74);
 }
 #picture2 {
     border: 2px rgb(202, 108, 0) solid;
 }
 #picture2:hover {
-      box-shadow: 0px 0px 10px rgb(202, 108, 0);
+    box-shadow: 0px 0px 10px rgb(202, 108, 0);
 }
 #picture3 {
-    border: 2px  rgb(2, 199, 196) solid;
+    border: 2px rgb(2, 199, 196) solid;
 }
 #picture3:hover {
-      box-shadow: 0px 0px 10px  rgb(2, 199, 196);
+    box-shadow: 0px 0px 10px rgb(2, 199, 196);
 }
 
 .firstcontainer .game, .secondcontainer .game, .thirdcontainer .game {
     background: rgb(33, 31, 28);
     width: 64%;
     padding-top: 25px;
+    padding-bottom: 25px;
     border-radius: 30px;
     border: 1px rgb(216, 205, 189) solid;
     overflow: hidden;
+    box-sizing: border-box;
 }
+
+.firstcontainer .game {
+    max-width: 900px;
+    width: 75%;
+}
+
+.secondcontainer .game {
+    flex: 1 1 340px;
+    max-width: 520px;
+    width: 100%;
+}
+
 
 .starfall_text {
     text-align: justify;
-    font-size: 140%;
+    font-size: 16px;
+    line-height: 1.6;
     margin: 20px;
-    font-family: "Titillium Web" sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-style: italic;
     color: var(--special-accent);
     hyphens: auto;
 }
 
-@media (max-width: 600px) {
-    .starfall_text, .lanterns_text, .ember_text {
-        text-align: left;
-        font-size: 15px;
-    }
-}
-
 .lanterns_text {
     text-align: justify;
-    font-size: 17px;
+    font-size: 16px;
+    line-height: 1.6;
     margin: 20px;
-    font-family: Cinzel;
+    font-family: Cinzel, serif;
     font-style: italic;
-    color:rgb(202, 108, 0);
+    color: rgb(202, 108, 0);
     hyphens: auto;
 }
 
 .ember_text {
     text-align: justify;
-    font-size: 20px;
+    font-size: 16px;
+    line-height: 1.6;
     margin: 20px;
-    font-family: "Exo 2" sans-serif;
+    font-family: "Exo 2", sans-serif;
     font-style: italic;
     color: rgb(2, 199, 196);
     hyphens: auto;
 }
 
-@media (max-width: 600px) {
-    .ember_text {
-        font-size: 16px;
-        text-align: left;
-    }
-    .lanterns_text {
-        font-size: 14px;
-        text-align: left;
-    }
-}
-
 .firstcontainer .game .starfall {
-    font-family: Eurostile Bold Extended;
-    font-size: 400%;
+    font-family: "Eurostile Bold Extended", sans-serif;
     background: rgb(17, 16, 14);
     border-radius: 10px;
     box-shadow: 0 0 10px black;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
     margin-bottom: 0px;
     padding: 10px;
     overflow-wrap: break-word;
-    font-size: clamp(20px, 5vw, 100px);
+    font-size: clamp(22px, 4vw, 42px);
+    color: var(--main-light-text);
 }
 
 .secondcontainer .game .lantern {
-    font-family: Cormorant Garamond;
-    font-size: 320%;
+    font-family: "Cormorant Garamond", serif;
     background: rgb(218, 231, 28);
     border-radius: 10px;
     box-shadow: 0 0 10px black;
@@ -174,31 +182,57 @@ div {
     margin-right: 10%;
     margin-bottom: 0px;
     -webkit-text-stroke: 0.4px black;
-    padding: 20px;
+    padding: 12px;
     overflow-wrap: break-word;
-    font-size: clamp(19px, 4vw, 100px);
+    font-size: clamp(20px, 3.5vw, 36px);
+    color: black;
 }
-
 
 .secondcontainer .game .ember {
     font-family: "Orbitron", sans-serif;
-    font-size: 300%;
     background: rgb(139, 0, 0);
     border-radius: 10px;
     box-shadow: 0 0 10px black;
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 0px;
-    padding: 20px;
+    padding: 12px;
     overflow-wrap: break-word;
-    font-size: clamp(19px, 4vw, 100px);
+    font-size: clamp(20px, 3.5vw, 34px);
+    color: var(--main-light-text);
 }
+
 
 .maincontainer {
-    flex-wrap: wrap;
-    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
-.firstcontainer, .secondcontainer {
-    flex: 1 1 300px;
+/* Reszponzív finomhangolás mobilra (390 px) és tabletre */
+@media (max-width: 768px) {
+    .firstcontainer .game,
+    .secondcontainer .game {
+        width: 95%;
+        max-width: 100%;
+        padding-left: 12px;
+        padding-right: 12px;
+        border-radius: 20px;
+    }
+
+    .firstcontainer .game .starfall,
+    .secondcontainer .game .lantern,
+    .secondcontainer .game .ember {
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 8px;
+    }
+
+    .starfall_text, .lanterns_text, .ember_text {
+        text-align: left;
+        font-size: 14px;
+        margin: 15px 8px;
+    }
+
 }
