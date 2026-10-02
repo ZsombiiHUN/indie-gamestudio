@@ -210,6 +210,75 @@ h1 {
     box-sizing: border-box;
 }
 
+.comparison-section {
+    margin: 40px auto 20px;
+    max-width: 1100px;
+}
+
+.comparison-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.comparison-header h2 {
+    color: var(--main-light-text);
+    font-size: 28px;
+    font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+    margin-bottom: 10px;
+}
+
+.comparison-header p {
+    color: var(--muted-text);
+    font-size: 15px;
+}
+
+.table-container {
+    overflow-x: auto;
+    border: 1px solid var(--light-border);
+    border-radius: 10px;
+}
+
+.games-table {
+    width: 100%;
+    min-width: 620px;
+    border-collapse: collapse;
+    background-color: var(--elevated-surface);
+    color: var(--main-light-text);
+    font-size: 15px;
+    text-align: left;
+}
+
+.games-table th,
+.games-table td {
+    border: 1px solid var(--light-border);
+    padding: 12px;
+}
+
+.games-table th {
+    color: var(--special-accent);
+    background-color: var(--main-background);
+    padding: 15px 12px;
+}
+
+.games-table tbody tr:hover {
+    background-color: #302a24;
+}
+
+.games-table .beta {
+    color: var(--special-accent);
+    font-weight: bold;
+}
+
+.games-table .alpha {
+    color: var(--brand-color);
+    font-weight: bold;
+}
+
+.games-table .concept {
+    color: rgb(2, 199, 196);
+    font-weight: bold;
+}
+
 /* Reszponzív finomhangolás mobilra (390 px) és tabletre */
 @media (max-width: 768px) {
     .firstcontainer .game,
